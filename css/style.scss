@@ -1,0 +1,925 @@
+$button: rgb(255, 78, 80);
+$point: 22px;
+$pointTo: 15px;
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: Roboto-BlackItalic;
+    src: url(../fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-BoldItalic;
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(../fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url(../fonts/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-MediumItalic;
+    src: url(../fonts/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: Roboto-ThinItalic;
+    src: url(../fonts/Roboto-ThinItalic.ttf);
+}
+
+
+/*
+*
+*    General styles (grid)
+*
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1,
+h2,
+h3,
+{
+     font-weight: 500;
+  line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.full-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+.block:before,
+.block:after {
+    content: " ";
+    display: table;
+}
+
+.block:after {
+    clear: both;
+}
+
+.mobile-1,
+.tablet-1,
+.desctop-1,
+.mobile-2,
+.tablet-2,
+.desctop-2,
+.mobile-3,
+.tablet-3,
+.desctop-3,
+.mobile-4,
+.tablet-4,
+.desctop-4,
+.mobile-5,
+.tablet-5,
+.desctop-5,
+.mobile-6,
+.tablet-6,
+.desctop-6,
+.mobile-7,
+.tablet-7,
+.desctop-7,
+.mobile-8,
+.tablet-8,
+.desctop-8,
+.mobile-9,
+.tablet-9,
+.desctop-9,
+.mobile-10,
+.tablet-10,
+.desctop-10,
+.mobile-11,
+.tablet-11,
+.desctop-11,
+.mobile-12,
+.tablet-12,
+.desctop-12 {
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.mobile-1,
+.mobile-2,
+.mobile-3,
+.mobile-4,
+.mobile-5,
+.mobile-6,
+.mobile-7,
+.mobile-8,
+.mobile-9,
+.mobile-10,
+.mobile-11,
+.mobile-12 {
+    float: left;
+}
+
+.mobile-12 {
+    width: 100%;
+}
+
+.mobile-11 {
+    width: 91.66666667%;
+}
+
+.mobile-10 {
+    width: 83.33333333%;
+}
+
+.mobile-9 {
+    width: 75%;
+}
+
+.mobile-8 {
+    width: 66.66666667%;
+}
+
+.mobile-7 {
+    width: 58.33333333%;
+}
+
+.mobile-6 {
+    width: 50%;
+}
+
+.mobile-5 {
+    width: 41.66666667%;
+}
+
+.mobile-4 {
+    width: 33.33333333%;
+}
+
+.mobile-3 {
+    width: 25%;
+}
+
+.mobile-2 {
+    width: 16.66666667%;
+}
+
+.mobile-1 {
+    width: 8.33333333%;
+}
+
+@media (min-width: 768px) {
+    .tablet-1,
+    .tablet-2,
+    .tablet-3,
+    .tablet-4,
+    .tablet-5,
+    .tablet-6,
+    .tablet-7,
+    .tablet-8,
+    .tablet-9,
+    .tablet-10,
+    .tablet-11,
+    .tablet-12 {
+        float: left;
+    }
+    .tablet-12 {
+        width: 100%;
+    }
+    .tablet-11 {
+        width: 91.66666667%;
+    }
+    .tablet-10 {
+        width: 83.33333333%;
+    }
+    .tablet-9 {
+        width: 75%;
+    }
+    .tablet-8 {
+        width: 66.66666667%;
+    }
+    .tablet-7 {
+        width: 58.33333333%;
+    }
+    .tablet-6 {
+        width: 50%;
+    }
+    .tablet-5 {
+        width: 41.66666667%;
+    }
+    .tablet-4 {
+        width: 33.33333333%;
+    }
+    .tablet-3 {
+        width: 25%;
+    }
+    .tablet-2 {
+        width: 16.66666667%;
+    }
+    .tablet-1 {
+        width: 8.33333333%;
+    }
+    .tablet-offset-6 {
+        margin-left: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .desctop-1,
+    .desctop-2,
+    .desctop-3,
+    .desctop-4,
+    .desctop-5,
+    .desctop-6,
+    .desctop-7,
+    .desctop-8,
+    .desctop-9,
+    .desctop-10,
+    .desctop-11,
+    .desctop-12 {
+        float: left;
+    }
+    .desctop-12 {
+        width: 100%;
+    }
+    .desctop-11 {
+        width: 91.66666667%;
+    }
+    .desctop-10 {
+        width: 83.33333333%;
+    }
+    .desctop-9 {
+        width: 75%;
+    }
+    .desctop-8 {
+        width: 66.66666667%;
+    }
+    .desctop-7 {
+        width: 58.33333333%;
+    }
+    .desctop-6 {
+        width: 50%;
+    }
+    .desctop-5 {
+        width: 41.66666667%;
+    }
+    .desctop-4 {
+        width: 33.33333333%;
+    }
+    .desctop-3 {
+        width: 25%;
+    }
+    .desctop-2 {
+        width: 16.66666667%;
+    }
+    .desctop-1 {
+        width: 8.33333333%;
+    }
+}
+
+
+/*
+*
+*    General styles (helper classes)
+*
+*/
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 767px) {
+    .visible-mobile {
+      display: none !important;
+    }
+}
+.hoverblue,
+.hoverblueBig {
+    transition: transform .2s;
+}
+
+.hoverblue:hover {
+    transform: scale(0.9);
+    transition: transform .2s;
+}
+
+.hoverblueBig:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.textHover:hover {
+    text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+.blockHover:hover {
+    text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 768px) {
+    .center-xs {
+        text-align: center !important;
+    }
+    .mobile-only-offset-2 {
+        margin-left: 16.66666667%;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.form-control::-moz-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #999999;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    background-color: #eeeeee;
+    opacity: 1;
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+    cursor: not-allowed;
+}
+
+
+/*
+*
+*    General styles (body)
+*
+*/
+
+html,
+body {
+    min-height: 100%;
+    width: 100%;
+    font-family: Montserrat-Bold;
+    //overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.newBlock {
+    margin-top: 75px;
+}
+
+h2 {
+    font-size: 22px;
+    font-family: Montserrat-Bold;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+}
+
+
+/*
+*
+*    Header
+*
+*/
+
+header {
+    min-height: 100%;
+    min-height: 100vh;
+    display: block;
+    background-color: rgb(26, 25, 21);
+    background-image: url(../images/headerbg.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    color: #fff;
+    .topMenu {
+        margin-top: 38px;
+    }
+    .text {
+        margin-top: 4px;
+        font-size: 20px;
+        font-family: Montserrat-Bold;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    .text-xs {
+        margin-top: 115px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+    }
+    .logIn {
+        //margin-right: 20px;
+        margin-top: 9px;
+        margin-right: 22px;
+        display: inline-block;
+        //width: 80px;
+        font-size: 14px;
+        font-family: Montserrat-Bold;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+    }
+    .signUp {
+        font-size: 14px;
+        display: inline-block;
+        font-family: Montserrat-Bold;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
+        //height: 100%;
+        width: 90px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(255, 255, 255);
+        background-color: rgba(26, 25, 21, 0);
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 30px;
+    }
+    .middleLine {
+        margin-top: 140px;
+    }
+    @media (max-width: 768px) {
+        .middleLine {
+            margin-top: 40px;
+        }
+    }
+    @media (max-width: 768px) {
+        .middleLine {
+            margin-top: 40px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+    }
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 52px
+        }
+    }
+    h1 {
+        font-family: Montserrat-Regular;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin: 0;
+    }
+    h3 {
+        font-size: 24px;
+        font-family: Roboto-Thin;
+        line-height: 1.2;
+        margin-top: 21px;
+    }
+    .buttonLink {
+        margin: 35px;
+        margin-top: 23px;
+        //margin-top:0;
+    }
+    .button {
+        //margin-right: 35px;
+        background-color: $button;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 30px;
+    }
+}
+
+
+/*
+*
+*    Content
+*
+*/
+
+.content {
+    padding-top: 90px;
+    color: #333;
+    //How it works
+    .howItWorks {
+        h2 {
+            font-size: 22px;
+            padding-bottom: 30px;
+            color: rgb(51, 51, 51);
+            line-height: 1.2;
+            margin: 0;
+        }
+    }
+    .carusel {
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        background-clip: content-box;
+        overflow: hidden;
+        border-radius: 5px;
+        color: #fff;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        .overlay {
+            border-radius: 5px;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+            background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+            position: relative;
+            .text {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 10px;
+                border-radius: 15px;
+                opacity: 0;
+            }
+            .active {
+                opacity: 1;
+                transition: opacity 1s;
+            }
+            .button {
+                font-family: Montserrat-Regular;
+                font-size: 10px;
+                text-transform: uppercase;
+                line-height: 1.2;
+                text-align: center;
+                width: 70px;
+                background-color: $button;
+                padding: 5px;
+                border-radius: 20px;
+            }
+            .button:hover {
+                background-color: $button/1.1;
+            }
+            h3 {
+                font-family: Montserrat-Bold;
+                font-size: 24px;
+                line-height: 1.2;
+            }
+            .description {
+                font-family: Roboto-Light;
+                font-size: 14px;
+                color: rgb(204, 204, 204);
+                line-height: 1.2;
+            }
+            .pointLeft {
+                position: absolute;
+                left: 0;
+                top: 35%;
+                margin: $point;
+                cursor: pointer;
+                z-index: 98;
+                transition: .1s;
+            }
+            .pointLeft:hover {
+                margin-left: $pointTo;
+                transition: .1s;
+            }
+            .pointRight {
+                position: absolute;
+                right: 0;
+                top: 35%;
+                margin: $point;
+                transform: rotate(180deg);
+                cursor: pointer;
+                z-index: 99;
+                transition: .1s;
+            }
+            .pointRight:hover {
+                margin-right: $pointTo;
+                transition: .1s;
+            }
+        }
+    }
+    .carusel:hover .overlay {
+        background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+        position: relative;
+        transition: .2s;
+    }
+    #carusel1 {
+        background-image: url(../images/carusel1.jpg);
+    }
+    #carusel2 {
+        background-image: url(../images/carusel2.jpg);
+    }
+    #carusel3 {
+        background-image: url(../images/carusel3.jpg);
+    }
+    // Parthner
+    .circle {
+        display: inline-block;
+        margin-left: -40px;
+        margin-bottom: -10px;
+        height: 42px;
+        width: 42px;
+        border: 4px solid #fff;
+        border-radius: 50%;
+        z-index: 1;
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .circle-4 {
+        background-color: #ff4e50;
+    }
+    .circle-3 {
+        background-color: #1cd7ad;
+    }
+    .circle-2 {
+        background-color: #ffa507;
+    }
+    .circle-1 {
+        background-color: #4e73db;
+    }
+    .partnerCircle {
+        border-radius: 50%;
+    }
+    .partnersPhoto {
+        h2 {
+            margin-bottom: 30px;
+        }
+        .name {
+            font-size: 14px;
+            color: rgb(51, 51, 51);
+            line-height: 1.2;
+            margin-top: 20px;
+        }
+        .description {
+            font-size: 14px;
+            font-family: Roboto-Light;
+            color: rgb(102, 102, 102);
+            line-height: 1.2;
+            margin-top: 12px;
+        }
+    }
+    .otherPartners {
+        .buttonLink {
+            margin-top: 39px;
+        }
+        .button {
+            padding: 8px;
+            border-radius: 30px;
+            border: 2px solid $button;
+            width: 193px;
+            margin: auto;
+            font-size: 14px;
+            line-height: 1.2;
+            color: $button;
+        }
+    }
+    .ideas {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .imagesBox {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .imagesMenu {
+        height: 310px;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        background-clip: content-box;
+        background-color: rgba(51, 51, 51, 0.3);
+        background-blend-mode: overlay;
+        position: relative;
+        transition: .3s;
+    }
+    .imagesMenu:hover {
+        background-color: rgba(51, 51, 51, 0.7);
+        transition: .3s;
+    }
+    .ideasLink {
+        height: 100%;
+        width: 100%;
+    }
+    .overlay {
+        //padding-top: 145px;
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 73%;
+    }
+    #imagesMenu1 {
+        background-image: url(../images/menu1.jpg)
+    }
+    #imagesMenu2 {
+        background-image: url(../images/menu2.jpg)
+    }
+    #imagesMenu3 {
+        background-image: url(../images/menu3.jpg)
+    }
+    #imagesMenu4 {
+        background-image: url(../images/menu4.jpg)
+    }
+    #imagesMenu5 {
+        background-image: url(../images/menu5.jpg)
+    }
+    #imagesMenu6 {
+        background-image: url(../images/menu6.jpg)
+    }
+    #imagesMenu7 {
+        background-image: url(../images/menu7.jpg)
+    }
+    .discoverHoliday {
+        h2 {
+            margin: 0;
+            margin-top: 10px;
+        }
+        .hiText {
+            font-size: 18px;
+            font-family: Roboto-Light;
+            color: rgb(51, 51, 51);
+            line-height: 1.2;
+            margin-top: 29px;
+        }
+        .partnersInput {
+            display: inline-block;
+            width: 240px;
+            font-family: Roboto-Light;
+        }
+        .button {
+            padding: 12px;
+            margin: 10px;
+            padding-left: 22px;
+            padding-right: 22px;
+            border-radius: 30px;
+            font-size: 14px;
+            line-height: 1.2;
+            background-color: $button;
+            color: #fff;
+            border: 0;
+        }
+        .button:focus {
+            outline: none !important;
+        }
+        .form {
+            margin-top: 28px;
+        }
+        input {
+            height: 40px;
+        }
+    }
+}
+
+footer {
+    margin-top: 90px;
+    border-top: 6px $button solid;
+    padding-bottom: 25px;
+    .footerContent {
+        margin-top: 25px;
+    }
+    .footerMainMenu {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .footerMenu {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 14px;
+        font-family: Roboto-Light;
+        color: rgb(102, 102, 102);
+        line-height: 1.714;
+    }
+    .designedBy {
+        margin-bottom: 7px;
+        font-size: 10px;
+        color: rgb(204, 204, 204);
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    a {
+        display: block;
+    }
+    .name {
+        color: $button;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+}
